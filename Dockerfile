@@ -7,7 +7,3 @@ RUN echo -e "\n" | add-apt-repository ppa:webupd8team/java && \
     oracle-java8-installer oracle-java8-set-default xvfb && \
     update-java-alternatives -s java-8-oracle && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-
-# Pentaho environment variables
-ENV PENTAHO_JAVA_HOME "/usr/lib/jvm/java-8-oracle/jre"
-ENV PENTAHO_JAVA "/usr/lib/jvm/java-8-oracle/jre/bin/java"
